@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#FAF8F3"/>
+  <defs>
+    <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.025" numOctaves="2" seed="7" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1.2"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#19324D"/></marker>
+  </defs>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#19324D">
+    <text x="600" y="63" text-anchor="middle" font-size="33" font-weight="700">AI 把生产成本打下来了，价值不会自动出现</text>
+    <g filter="url(#rough)" fill="none" stroke="#19324D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="105" y="145" width="220" height="300" rx="25"/>
+      <path d="M140 200 H290 M140 235 H265 M140 270 H282" stroke="#4B7BEC"/>
+      <circle cx="215" cy="385" r="28" stroke="#E46C5B"/>
+      <path d="M198 368 L232 402 M232 368 L198 402" stroke="#E46C5B"/>
+      <path d="M360 295 H500" marker-end="url(#arrow)"/>
+      <rect x="745" y="125" width="145" height="200" rx="18" transform="rotate(-5 817 225)"/>
+      <rect x="830" y="160" width="145" height="200" rx="18" transform="rotate(4 902 260)"/>
+      <rect x="690" y="225" width="145" height="200" rx="18" transform="rotate(5 762 325)"/>
+      <rect x="785" y="255" width="145" height="200" rx="18" transform="rotate(-3 857 355)"/>
+      <rect x="900" y="235" width="145" height="200" rx="18" transform="rotate(6 972 335)"/>
+      <circle cx="865" cy="510" r="30" stroke="#E46C5B"/>
+      <path d="M844 489 L886 531 M886 489 L844 531" stroke="#E46C5B"/>
+      <path d="M145 575 H1040" stroke="#3BAA8C" marker-end="url(#arrow)"/>
+    </g>
+    <text x="215" y="115" text-anchor="middle" font-size="24" font-weight="700">过去：3 个月做 1 个</text>
+    <text x="215" y="485" text-anchor="middle" font-size="22">真实用户：0</text>
+    <text x="430" y="270" text-anchor="middle" font-size="25" font-weight="700" fill="#4B7BEC">AI 加速</text>
+    <text x="865" y="100" text-anchor="middle" font-size="24" font-weight="700">现在：3 个月做 10 个</text>
+    <text x="865" y="555" text-anchor="middle" font-size="22">真实用户：仍然是 0</text>
+    <text x="595" y="625" text-anchor="middle" font-size="25" font-weight="700">生成速度 ↑　　需求判断、分发与反馈 ≈ 不变</text>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#FAF8F3"/>
+  <defs>
+    <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="11" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1.1"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#19324D"/></marker>
+  </defs>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#19324D">
+    <text x="600" y="62" text-anchor="middle" font-size="33" font-weight="700">编码提速，不等于交付提速</text>
+    <text x="80" y="168" font-size="24" font-weight="700">原流程</text>
+    <text x="80" y="348" font-size="24" font-weight="700">AI 之后</text>
+    <g filter="url(#rough)" stroke="#19324D" stroke-width="3" stroke-linejoin="round">
+      <rect x="215" y="120" width="175" height="95" rx="14" fill="#FFF"/>
+      <rect x="430" y="120" width="175" height="95" rx="14" fill="#DCE8FF"/>
+      <rect x="645" y="120" width="175" height="95" rx="14" fill="#FFF"/>
+      <rect x="860" y="120" width="175" height="95" rx="14" fill="#FFF"/>
+      <path d="M390 168 H425 M605 168 H640 M820 168 H855" fill="none" marker-end="url(#arrow)"/>
+      <rect x="215" y="300" width="175" height="95" rx="14" fill="#FFE4DF" stroke="#E46C5B" stroke-width="5"/>
+      <rect x="455" y="315" width="105" height="65" rx="14" fill="#DDF4EC" stroke="#3BAA8C"/>
+      <rect x="645" y="300" width="175" height="95" rx="14" fill="#FFE4DF" stroke="#E46C5B" stroke-width="5"/>
+      <rect x="860" y="300" width="175" height="95" rx="14" fill="#FFE4DF" stroke="#E46C5B" stroke-width="5"/>
+      <path d="M390 348 H450 M560 348 H640 M820 348 H855" fill="none" marker-end="url(#arrow)"/>
+      <path d="M290 430 C290 510 725 520 725 410" fill="none" stroke="#E46C5B" stroke-dasharray="10 9" marker-end="url(#arrow)"/>
+      <path d="M730 430 C730 540 945 535 945 410" fill="none" stroke="#E46C5B" stroke-dasharray="10 9" marker-end="url(#arrow)"/>
+    </g>
+    <g font-size="23" text-anchor="middle">
+      <text x="302" y="178">需求澄清</text><text x="517" y="178">开发编码</text><text x="732" y="178">评审测试</text><text x="947" y="178">发布验收</text>
+      <text x="302" y="358">需求澄清</text><text x="507" y="354">编码</text><text x="732" y="358">评审测试</text><text x="947" y="358">发布验收</text>
+    </g>
+    <text x="505" y="420" text-anchor="middle" font-size="19" fill="#3BAA8C">压缩到很短</text>
+    <text x="600" y="505" text-anchor="middle" font-size="24" font-weight="700" fill="#E46C5B">等待被推向下一个节点</text>
+    <text x="600" y="590" text-anchor="middle" font-size="27" font-weight="700">给旧流程装上更快的节点，网络拓扑并没有改变</text>
+  </g>
+</svg>

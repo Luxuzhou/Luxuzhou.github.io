@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#FAF8F3"/>
+  <defs>
+    <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="2" seed="31" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1.1"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#19324D"/></marker>
+  </defs>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#19324D">
+    <text x="600" y="62" text-anchor="middle" font-size="36" font-weight="700">Agent = Model + Harness</text>
+    <g filter="url(#rough)" stroke="#19324D" stroke-width="3.5" stroke-linejoin="round">
+      <rect x="80" y="185" width="250" height="240" rx="28" fill="#DCE8FF"/>
+      <circle cx="205" cy="275" r="48" fill="#FFF"/>
+      <path d="M205 215 V235 M205 315 V335 M145 275 H165 M245 275 H265 M163 233 L177 247 M233 303 L247 317 M247 233 L233 247 M177 303 L163 317" fill="none" stroke="#4B7BEC"/>
+      <rect x="440" y="125" width="420" height="360" rx="28" fill="#FFF" stroke="#3BAA8C" stroke-width="5"/>
+      <rect x="485" y="175" width="135" height="65" rx="12" fill="#FFE4DF"/><rect x="680" y="175" width="135" height="65" rx="12" fill="#FFF0CE"/>
+      <rect x="485" y="275" width="135" height="65" rx="12" fill="#DCE8FF"/><rect x="680" y="275" width="135" height="65" rx="12" fill="#DCE8FF"/>
+      <rect x="485" y="375" width="135" height="65" rx="12" fill="#DDF4EC"/><rect x="680" y="375" width="135" height="65" rx="12" fill="#EDE5FF"/>
+      <rect x="970" y="210" width="155" height="190" rx="26" fill="#DDF4EC"/>
+      <path d="M340 305 H420" fill="none" marker-end="url(#arrow)"/>
+      <path d="M875 305 H950" fill="none" marker-end="url(#arrow)"/>
+      <path d="M1010 320 L1040 350 L1090 270" fill="none" stroke="#3BAA8C" stroke-width="8"/>
+    </g>
+    <text x="205" y="380" text-anchor="middle" font-size="28" font-weight="700">Model</text>
+    <text x="205" y="410" text-anchor="middle" font-size="18">生成 · 推理</text>
+    <text x="385" y="290" text-anchor="middle" font-size="42">＋</text>
+    <text x="650" y="105" text-anchor="middle" font-size="27" font-weight="700" fill="#3BAA8C">Harness 外部工程系统</text>
+    <g font-size="21" text-anchor="middle"><text x="552" y="216">约束</text><text x="747" y="216">工具 / MCP</text><text x="552" y="316">上下文</text><text x="747" y="316">记忆</text><text x="552" y="416">验证</text><text x="747" y="416">编排</text></g>
+    <text x="920" y="290" text-anchor="middle" font-size="42">＝</text>
+    <text x="1047" y="250" text-anchor="middle" font-size="27" font-weight="700">可用的</text>
+    <text x="1047" y="285" text-anchor="middle" font-size="27" font-weight="700">Agent</text>
+    <text x="600" y="565" text-anchor="middle" font-size="28" font-weight="700">模型决定能力上限，Harness 决定它能否稳定上路</text>
+    <path d="M250 605 Q600 635 950 605" fill="none" stroke="#F2A340" stroke-width="5" stroke-linecap="round" filter="url(#rough)"/>
+  </g>
+</svg>

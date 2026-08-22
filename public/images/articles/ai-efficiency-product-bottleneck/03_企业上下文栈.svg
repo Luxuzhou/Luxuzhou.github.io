@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#FAF8F3"/>
+  <defs>
+    <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="2" seed="19" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1.1"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#19324D"/></marker>
+  </defs>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#19324D">
+    <text x="600" y="60" text-anchor="middle" font-size="33" font-weight="700">企业 AI 的上限，藏在上下文栈里</text>
+    <g filter="url(#rough)" stroke="#19324D" stroke-width="3" stroke-linejoin="round">
+      <rect x="365" y="115" width="470" height="92" rx="18" fill="#DCE8FF"/>
+      <rect x="315" y="230" width="570" height="92" rx="18" fill="#DDF4EC"/>
+      <rect x="265" y="345" width="670" height="92" rx="18" fill="#FFF0CE"/>
+      <rect x="215" y="460" width="770" height="105" rx="18" fill="#FFE4DF"/>
+      <path d="M120 160 H345" fill="none" marker-end="url(#arrow)"/>
+      <path d="M855 160 H1080" fill="none" marker-end="url(#arrow)"/>
+      <path d="M1035 210 C1120 300 1115 450 1010 510" fill="none" stroke="#3BAA8C" stroke-dasharray="10 8" marker-end="url(#arrow)"/>
+    </g>
+    <text x="600" y="172" text-anchor="middle" font-size="25" font-weight="700">执行层：员工 · Agent · 内部系统</text>
+    <text x="600" y="286" text-anchor="middle" font-size="25" font-weight="700">连接层：API · MCP · 工具权限</text>
+    <text x="600" y="401" text-anchor="middle" font-size="25" font-weight="700">知识层：文档 · 业务规则 · 历史经验</text>
+    <text x="600" y="510" text-anchor="middle" font-size="25" font-weight="700">数据底座：口径 · 质量 · 权属 · 时效 · 审计</text>
+    <text x="600" y="543" text-anchor="middle" font-size="19">最慢、最脏，却决定上面三层能不能工作</text>
+    <text x="115" y="135" text-anchor="middle" font-size="22" font-weight="700">业务目标</text>
+    <text x="1085" y="135" text-anchor="middle" font-size="22" font-weight="700">业务结果</text>
+    <text x="1085" y="340" text-anchor="middle" font-size="20" fill="#3BAA8C">验证与反馈</text>
+    <text x="600" y="625" text-anchor="middle" font-size="26" font-weight="700">MCP 管连接，数据治理决定连接之后有没有东西可用</text>
+  </g>
+</svg>
