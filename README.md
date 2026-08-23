@@ -32,3 +32,7 @@ npm run build
 文章正文会生成一份网站发布快照到 `src/generated/articleContent.ts`。托管环境无法访问个人 Content 内容库时会直接使用该快照；在 Obsidian 中更新已发布文章后，运行 `npm run sync:content` 即可同步网站版本。
 
 生产构建输出在 `dist`，并由 OpenAI Sites 托管。`node_modules`、`.next`、`.vinext`、`out` 和 `dist` 均为可重建目录，不应作为源文件备份。
+
+## GitHub Pages
+
+站点同时发布到 `https://luxuzhou.github.io/`。推送到 `main` 分支后，GitHub Actions 会执行静态构建、检查站内链接并更新 GitHub Pages。

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import SiteFooter from "@/components/SiteFooter";
 import { selectedArticles } from "@/data/site";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "研究与写作",
@@ -38,25 +37,25 @@ export default function ArticlesPage() {
 
             <div className="article-index-list">
               {selectedArticles.map((article) => (
-                <Link className="article-index-row" href={`/articles/${article.slug}`} key={article.title}>
+                <a className="article-index-row" href={`/articles/${article.slug}`} key={article.title}>
                   <time>{article.date}</time>
                   <span>{article.category}</span>
                   <div>
                     <h2>{article.title}</h2>
                     <p>{article.note}</p>
                   </div>
-                </Link>
+                </a>
               ))}
             </div>
 
-            <Link className="research-gateway" href="/research">
+            <a className="research-gateway" href="/research">
               <span>RESEARCH &amp; EVIDENCE / 研究与成果</span>
               <div>
                 <h2>基金申报、专利方案、论文协作与出版成果</h2>
                 <p>按公开状态、个人角色和可验证证据组织，逐步补齐完整成果台账。</p>
               </div>
               <strong>查看研究成果 →</strong>
-            </Link>
+            </a>
 
             <div className="channel-note">
               <strong>硅基鹿鸣</strong>

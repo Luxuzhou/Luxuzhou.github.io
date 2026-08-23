@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -51,7 +50,7 @@ export default async function ArticleDetailPage({ params }: ArticlePageProps) {
       <main className="page-main">
         <header className="article-detail-hero">
           <div className="site-shell article-title-shell">
-            <Link className="detail-back" href="/articles">← 返回研究与写作</Link>
+            <a className="detail-back" href="/articles">← 返回研究与写作</a>
             <p className="eyebrow">{article.category} / PUBLISHED NOTE</p>
             <h1>{article.title}</h1>
             <div className="article-meta-row">
@@ -68,10 +67,10 @@ export default async function ArticleDetailPage({ params }: ArticlePageProps) {
             <aside className="article-context">
               <p className="eyebrow">CONNECTED WORK / 关联实践</p>
               {relatedProjects.map((project) => (
-                <Link href={`/projects/${project.slug}`} key={project.slug}>
+                <a href={`/projects/${project.slug}`} key={project.slug}>
                   <span>{project.index}</span>
                   <strong>{project.title}</strong>
-                </Link>
+                </a>
               ))}
               <div className="article-source-note">
                 本页由个人内容库中的公众号正式稿生成，保留原文结构并移除发布后台备注。
@@ -100,13 +99,13 @@ export default async function ArticleDetailPage({ params }: ArticlePageProps) {
               <p className="eyebrow">LEXLOOP / 持续进化</p>
               <h2>从一次实验，进入下一轮实践。</h2>
               <p>公众号「硅基鹿鸣」持续发布完整实验、工具实测和行业判断。</p>
-              <Link className="button button-primary" href="/about#wechat">关注公众号 <span>↗</span></Link>
+              <a className="button button-primary" href="/about#wechat">关注公众号 <span>↗</span></a>
             </div>
             {relatedArticles.length > 0 && (
               <div className="article-next-list">
                 <span>继续阅读</span>
                 {relatedArticles.map((item) => (
-                  <Link href={`/articles/${item.slug}`} key={item.slug}>{item.title} <i>→</i></Link>
+                  <a href={`/articles/${item.slug}`} key={item.slug}>{item.title} <i>→</i></a>
                 ))}
               </div>
             )}

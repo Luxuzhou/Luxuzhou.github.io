@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import SiteFooter from "@/components/SiteFooter";
 
@@ -96,7 +95,7 @@ export default function ResearchPage() {
 
         <section className="research-writing-link">
           <div className="site-shell">
-            <Link href="/articles">继续阅读研究与写作 <span>→</span></Link>
+            <a href="/articles">继续阅读研究与写作 <span>→</span></a>
           </div>
         </section>
       </main>

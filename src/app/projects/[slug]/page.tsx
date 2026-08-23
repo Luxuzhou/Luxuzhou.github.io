@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import SiteFooter from "@/components/SiteFooter";
@@ -42,7 +41,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
       <main className="page-main">
         <header className="detail-hero project-detail-hero">
           <div className="site-shell">
-            <Link className="detail-back" href="/projects">← 返回项目实践</Link>
+            <a className="detail-back" href="/projects">← 返回项目实践</a>
             <div className="detail-hero-grid">
               <div>
                 <p className="eyebrow">CASE {project.index} / {project.eyebrow}</p>
@@ -122,11 +121,11 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
               <p className="eyebrow">RELATED WRITING / 相关写作</p>
               <div className="related-link-list">
                 {relatedArticles.map((article) => (
-                  <Link href={`/articles/${article.slug}`} key={article.slug}>
+                  <a href={`/articles/${article.slug}`} key={article.slug}>
                     <span>{article.date} · {article.category}</span>
                     <strong>{article.title}</strong>
                     <i>→</i>
-                  </Link>
+                  </a>
                 ))}
               </div>
             </div>

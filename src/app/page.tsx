@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import SiteFooter from "@/components/SiteFooter";
 import EvolutionMark from "@/components/EvolutionMark";
@@ -62,12 +61,12 @@ export default function Home() {
                 我是陆徐洲，也以 LexLoop 持续写作，是公众号「硅基鹿鸣」的作者。关注 Agent Engineering、企业数据智能，以及人和 AI 如何共同交付可靠结果。
               </p>
               <div className="hero-actions">
-                <Link className="button button-primary" href="/projects">
+                <a className="button button-primary" href="/projects">
                   查看代表性实践 <span>↗</span>
-                </Link>
-                <Link className="text-link" href="/articles">
+                </a>
+                <a className="text-link" href="/articles">
                   阅读研究与写作 <span>→</span>
-                </Link>
+                </a>
               </div>
               <div className="hero-facts" aria-label="个人成果摘要">
                 <div>
@@ -122,7 +121,7 @@ export default function Home() {
 
             <div className="case-list">
               {featuredCases.map((item) => (
-                <Link className="case-row" href={`/projects/${item.slug}`} id={item.index === "01" ? "dshoffice" : undefined} key={item.index}>
+                <a className="case-row" href={`/projects/${item.slug}`} id={item.index === "01" ? "dshoffice" : undefined} key={item.index}>
                   <div className="case-index">{item.index}</div>
                   <div className="case-main">
                     <p className="case-eyebrow">{item.eyebrow}</p>
@@ -136,12 +135,12 @@ export default function Home() {
                     <span className={`status status-${item.statusType}`}>{item.status}</span>
                     <p>{item.signal}</p>
                   </div>
-                </Link>
+                </a>
               ))}
             </div>
 
             <div className="section-action">
-              <Link className="text-link" href="/projects">打开完整能力项目库 <span>→</span></Link>
+              <a className="text-link" href="/projects">打开完整能力项目库 <span>→</span></a>
             </div>
           </div>
         </section>
@@ -195,17 +194,17 @@ export default function Home() {
                   <p className="eyebrow">RECENT NOTES / 近期文章</p>
                   <h2>以实验、项目和判断<br />持续记录 AI 变化。</h2>
                 </div>
-                <Link className="text-link" href="/articles">全部文章 <span>→</span></Link>
+                <a className="text-link" href="/articles">全部文章 <span>→</span></a>
               </div>
               <div>
                 {selectedArticles.slice(0, 4).map((article) => (
-                  <Link className="article-line" href={`/articles/${article.slug}`} key={article.title}>
+                  <a className="article-line" href={`/articles/${article.slug}`} key={article.title}>
                     <time>{article.date}</time>
                     <div>
                       <span>{article.category}</span>
                       <h3>{article.title}</h3>
                     </div>
-                  </Link>
+                  </a>
                 ))}
               </div>
             </article>
@@ -220,7 +219,7 @@ export default function Home() {
               希望和真正关心 AI 产品落地、工程可信度与组织协同的人交流。这里会持续公开实践、失败和可复用的方法。
             </p>
             <div>
-              <Link className="button button-primary" href="/about">了解我的经历 <span>↗</span></Link>
+              <a className="button button-primary" href="/about">了解我的经历 <span>↗</span></a>
             </div>
           </div>
         </section>

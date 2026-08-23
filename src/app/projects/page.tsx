@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import SiteFooter from "@/components/SiteFooter";
-import Link from "next/link";
 import { featuredCases, projectGroups } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -38,7 +37,7 @@ export default function ProjectsPage() {
 
             <div>
               {featuredCases.map((item) => (
-                <Link className="project-feature-card" href={`/projects/${item.slug}`} key={item.index}>
+                <a className="project-feature-card" href={`/projects/${item.slug}`} key={item.index}>
                   <div className="case-index">{item.index}</div>
                   <div className="case-main">
                     <p className="case-eyebrow">{item.eyebrow}</p>
@@ -52,7 +51,7 @@ export default function ProjectsPage() {
                     <span className={`status status-${item.statusType}`}>{item.status}</span>
                     <p>{item.signal}</p>
                   </div>
-                </Link>
+                </a>
               ))}
             </div>
           </div>

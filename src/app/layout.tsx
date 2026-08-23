@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://lexloop-ai.lexloop619.chatgpt.site"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://lexloop-ai.lexloop619.chatgpt.site",
+  ),
   title: {
     default: "LexLoop（陆徐洲）｜可靠 AI 系统的实践与写作",
     template: "%s｜LexLoop",
