@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#FAF8F3"/>
+  <defs>
+    <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="2" seed="23" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1.1"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#19324D"/></marker>
+  </defs>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#19324D">
+    <text x="600" y="58" text-anchor="middle" font-size="33" font-weight="700">FDE：站在客户现场的“单人交付小队”</text>
+    <g filter="url(#rough)" fill="none" stroke="#19324D" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="370" cy="305" r="82" fill="#DCE8FF"/>
+      <rect x="110" y="120" width="180" height="76" rx="15" fill="#FFF"/>
+      <rect x="450" y="105" width="180" height="76" rx="15" fill="#FFF"/>
+      <rect x="660" y="225" width="180" height="76" rx="15" fill="#FFF"/>
+      <rect x="575" y="410" width="180" height="76" rx="15" fill="#FFF"/>
+      <rect x="260" y="470" width="180" height="76" rx="15" fill="#FFF"/>
+      <rect x="70" y="335" width="180" height="76" rx="15" fill="#FFF"/>
+      <path d="M265 200 C310 215 330 220 345 230" marker-end="url(#arrow)"/>
+      <path d="M430 230 C465 205 490 190 520 185" marker-end="url(#arrow)"/>
+      <path d="M625 180 C675 185 705 200 730 220" marker-end="url(#arrow)"/>
+      <path d="M730 305 C720 365 690 390 660 405" marker-end="url(#arrow)"/>
+      <path d="M575 455 C520 485 475 495 445 500" marker-end="url(#arrow)"/>
+      <path d="M260 500 C205 475 180 440 175 415" marker-end="url(#arrow)"/>
+      <path d="M175 335 C175 265 190 225 215 200" marker-end="url(#arrow)"/>
+      <path d="M915 125 H1080 M915 205 H1080 M915 285 H1080 M915 365 H1080 M915 445 H1080" stroke="#4B7BEC"/>
+      <circle cx="900" cy="125" r="8" fill="#4B7BEC"/><circle cx="900" cy="205" r="8" fill="#4B7BEC"/><circle cx="900" cy="285" r="8" fill="#4B7BEC"/><circle cx="900" cy="365" r="8" fill="#4B7BEC"/><circle cx="900" cy="445" r="8" fill="#4B7BEC"/>
+    </g>
+    <text x="370" y="297" text-anchor="middle" font-size="30" font-weight="700">FDE</text>
+    <text x="370" y="332" text-anchor="middle" font-size="19">对交付结果负责</text>
+    <g font-size="21" text-anchor="middle"><text x="200" y="168">发现问题</text><text x="540" y="153">界定范围</text><text x="750" y="273">系统设计</text><text x="665" y="458">开发集成</text><text x="350" y="518">部署上线</text><text x="160" y="383">评测反馈</text></g>
+    <text x="990" y="92" text-anchor="middle" font-size="23" font-weight="700">能力要求</text>
+    <g font-size="21"><text x="930" y="133">行业理解</text><text x="930" y="213">全栈工程</text><text x="930" y="293">数据治理</text><text x="930" y="373">沟通交付</text><text x="930" y="453">评测运维</text></g>
+    <text x="600" y="620" text-anchor="middle" font-size="25" font-weight="700" fill="#E46C5B">岗位很有价值，也很容易变成“一个人承担整条链路”</text>
+  </g>
+</svg>

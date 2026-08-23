@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="860" viewBox="0 0 1400 860">
+  <defs>
+    <filter id="paper" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="gray"/>
+      <feComponentTransfer in="gray" result="faint">
+        <feFuncA type="table" tableValues="0 0.035"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="faint" mode="multiply"/>
+    </filter>
+    <marker id="arrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto">
+      <path d="M0,0 L10,5.5 L0,11" fill="none" stroke="#233247" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="blueArrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto">
+      <path d="M0,0 L10,5.5 L0,11" fill="none" stroke="#2878b8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .ink{fill:#172235;font-family:"Microsoft YaHei","PingFang SC",sans-serif}
+      .hand{font-family:"KaiTi","STKaiti","Microsoft YaHei",sans-serif}
+      .title{font-size:38px;font-weight:700}
+      .sub{font-size:19px;fill:#536173}
+      .boxTitle{font-size:24px;font-weight:700}
+      .body{font-size:18px}
+      .small{font-size:15px;fill:#536173}
+      .box{fill:#fffefa;stroke:#233247;stroke-width:2.2;rx:18}
+      .rough{fill:none;stroke:#233247;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}
+      .blue{stroke:#2878b8}
+    </style>
+  </defs>
+
+  <rect width="1400" height="860" fill="#fbfaf5"/>
+  <rect width="1400" height="860" fill="#fbfaf5" filter="url(#paper)"/>
+
+  <text x="70" y="72" class="ink hand title">一轮后训练，究竟发生了什么？</text>
+  <text x="72" y="108" class="ink sub">底座已经造好，接下来围绕“怎样完成任务”反复训练</text>
+
+  <g transform="rotate(-1 1210 76)">
+    <rect x="1110" y="42" width="220" height="70" rx="12" fill="#fff2ec" stroke="#cf5d48" stroke-width="2.2"/>
+    <text x="1220" y="70" text-anchor="middle" class="hand" font-size="17" fill="#a93f31">0731 官方只确认</text>
+    <text x="1220" y="96" text-anchor="middle" class="hand" font-size="22" font-weight="700" fill="#a93f31">重新进行了后训练</text>
+  </g>
+
+  <!-- Stage 1 -->
+  <rect x="70" y="178" width="230" height="190" class="box"/>
+  <path d="M82 188 Q177 170 288 188" class="rough blue" opacity=".45"/>
+  <circle cx="104" cy="216" r="17" fill="#e8f3fb" stroke="#2878b8" stroke-width="2"/>
+  <text x="104" y="223" text-anchor="middle" class="ink hand" font-size="20" font-weight="700">1</text>
+  <text x="132" y="224" class="ink boxTitle">失败诊断</text>
+  <path d="M101 250 L266 250" class="rough" opacity=".25"/>
+  <text x="102" y="282" class="ink body">知识不会？</text>
+  <text x="102" y="316" class="ink body">行为不对？</text>
+  <text x="102" y="350" class="ink body">工具 / 环境失败？</text>
+
+  <!-- Stage 2 -->
+  <rect x="360" y="158" width="270" height="230" class="box"/>
+  <path d="M376 169 Q488 148 616 169" class="rough blue" opacity=".45"/>
+  <circle cx="396" cy="200" r="17" fill="#e8f3fb" stroke="#2878b8" stroke-width="2"/>
+  <text x="396" y="207" text-anchor="middle" class="ink hand" font-size="20" font-weight="700">2</text>
+  <text x="424" y="208" class="ink boxTitle">准备训练信号</text>
+  <text x="397" y="254" class="ink body">高质量示范数据</text>
+  <text x="397" y="292" class="ink body">可执行任务与沙箱</text>
+  <text x="397" y="330" class="ink body">奖励模型 / 验证器</text>
+  <text x="397" y="363" class="ink small">“怎样才算做对？”</text>
+
+  <path d="M302 270 C325 266 335 266 354 270" class="rough" marker-end="url(#arrow)"/>
+
+  <!-- Training split -->
+  <rect x="710" y="145" width="245" height="112" rx="17" fill="#eef7fd" stroke="#2878b8" stroke-width="2.2"/>
+  <text x="832" y="182" text-anchor="middle" class="ink boxTitle">领域 SFT</text>
+  <text x="832" y="216" text-anchor="middle" class="ink body">先学示范、格式与基本套路</text>
+
+  <rect x="710" y="286" width="245" height="112" rx="17" fill="#f1f8ef" stroke="#4e9564" stroke-width="2.2"/>
+  <text x="832" y="323" text-anchor="middle" class="ink boxTitle">GRPO 强化学习</text>
+  <text x="832" y="357" text-anchor="middle" class="ink body">在奖励与反馈中继续试错</text>
+
+  <path d="M632 260 C663 228 670 204 702 203" class="rough blue" marker-end="url(#blueArrow)"/>
+  <path d="M632 286 C668 309 673 340 702 341" class="rough blue" marker-end="url(#blueArrow)"/>
+
+  <!-- Experts -->
+  <path d="M974 271 C995 271 1004 271 1023 271" class="rough" marker-end="url(#arrow)"/>
+  <g>
+    <rect x="1035" y="150" width="118" height="55" rx="13" fill="#fff7dd" stroke="#bd8a25" stroke-width="1.8"/>
+    <text x="1094" y="184" text-anchor="middle" class="ink hand" font-size="21">数学专家</text>
+    <rect x="1170" y="150" width="118" height="55" rx="13" fill="#fff7dd" stroke="#bd8a25" stroke-width="1.8"/>
+    <text x="1229" y="184" text-anchor="middle" class="ink hand" font-size="21">代码专家</text>
+    <rect x="1035" y="222" width="118" height="55" rx="13" fill="#fff7dd" stroke="#bd8a25" stroke-width="1.8"/>
+    <text x="1094" y="256" text-anchor="middle" class="ink hand" font-size="21">Agent专家</text>
+    <rect x="1170" y="222" width="118" height="55" rx="13" fill="#fff7dd" stroke="#bd8a25" stroke-width="1.8"/>
+    <text x="1229" y="256" text-anchor="middle" class="ink hand" font-size="21">指令专家</text>
+  </g>
+  <text x="1160" y="313" text-anchor="middle" class="ink small">同一个底座，分科训练</text>
+
+  <!-- OPD -->
+  <path d="M1161 323 C1161 356 1161 375 1161 407" class="rough" marker-end="url(#arrow)"/>
+  <rect x="1005" y="420" width="312" height="120" rx="18" fill="#fff1ec" stroke="#cc654e" stroke-width="2.2"/>
+  <text x="1161" y="459" text-anchor="middle" class="ink boxTitle">On-Policy Distillation</text>
+  <text x="1161" y="492" text-anchor="middle" class="ink body">学生自己采样，专家沿真实轨迹纠偏</text>
+  <text x="1161" y="520" text-anchor="middle" class="ink small">把多种能力收回一个统一模型</text>
+
+  <!-- Unified model -->
+  <path d="M1000 480 C944 480 919 480 872 480" class="rough" marker-end="url(#arrow)"/>
+  <ellipse cx="755" cy="480" rx="112" ry="70" fill="#e9f2ff" stroke="#2878b8" stroke-width="2.6"/>
+  <ellipse cx="755" cy="480" rx="104" ry="63" fill="none" stroke="#2878b8" stroke-width="1.2" opacity=".45" transform="rotate(-2 755 480)"/>
+  <text x="755" y="473" text-anchor="middle" class="ink hand" font-size="27" font-weight="700">统一 V4 模型</text>
+  <text x="755" y="507" text-anchor="middle" class="ink small">Reasoning / Code / Agent</text>
+
+  <!-- Harness eval -->
+  <path d="M641 480 C584 480 557 480 513 480" class="rough" marker-end="url(#arrow)"/>
+  <rect x="248" y="421" width="255" height="126" rx="18" fill="#f0f7f0" stroke="#4e9564" stroke-width="2.2"/>
+  <text x="375" y="461" text-anchor="middle" class="ink boxTitle">Harness 联合评测</text>
+  <text x="375" y="495" text-anchor="middle" class="ink body">工具 · 终端 · 代码库 · 长任务</text>
+  <text x="375" y="523" text-anchor="middle" class="ink small">最终看任务有没有完成</text>
+
+  <!-- Feedback loop -->
+  <path d="M247 484 C104 488 76 428 119 382" fill="none" stroke="#cf5d48" stroke-width="2.4" stroke-dasharray="8 8" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="94" y="450" class="hand" font-size="18" fill="#a94234" transform="rotate(-72 94 450)">失败轨迹回流</text>
+
+  <!-- Bottom note -->
+  <path d="M72 635 C398 623 986 630 1325 620" class="rough" opacity=".18"/>
+  <text x="70" y="690" class="ink hand" font-size="26" font-weight="700">后训练 ≠ “拿一批问答微调一下”</text>
+  <text x="70" y="738" class="ink" font-size="24">
+    <tspan fill="#2878b8" font-weight="700">任务</tspan><tspan> + </tspan>
+    <tspan fill="#2878b8" font-weight="700">数据</tspan><tspan> + </tspan>
+    <tspan fill="#4e9564" font-weight="700">环境</tspan><tspan> + </tspan>
+    <tspan fill="#4e9564" font-weight="700">奖励 / 验证器</tspan><tspan> + </tspan>
+    <tspan fill="#cc654e" font-weight="700">训练算法</tspan><tspan> + </tspan>
+    <tspan fill="#cc654e" font-weight="700">Harness 评测</tspan>
+  </text>
+  <text x="70" y="797" class="ink small">根据 DeepSeek-V4 技术报告整理。0731 版本沿用同一架构，但本轮新增数据、奖励与阶段配比尚未公开。</text>
+  <text x="1330" y="813" text-anchor="end" class="hand" font-size="17" fill="#778394">陆徐洲 · AI见闻录</text>
+</svg>
