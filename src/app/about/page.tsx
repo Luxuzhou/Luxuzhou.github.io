@@ -14,19 +14,7 @@ export default function AboutPage() {
     <>
       <Navbar current="about" />
       <main className="page-main">
-        <header className="page-intro page-intro-about">
-          <div className="site-shell page-intro-grid">
-            <div>
-              <p className="eyebrow">ABOUT / 关于我</p>
-              <h1>算法、工程与产品协同，<br /><em>交付可靠 AI 系统。</em></h1>
-            </div>
-            <p className="page-intro-copy">
-              我是陆徐洲，也以 LexLoop 持续写作。八年实践覆盖医疗信息化、企业软件与生产级 AI 应用。
-            </p>
-          </div>
-        </header>
-
-        <section className="about-section">
+        <section className="about-section about-section-primary">
           <div className="site-shell profile-layout">
             <figure className="profile-photo-card">
               <Image
@@ -79,11 +67,20 @@ export default function AboutPage() {
                   <span>BUILDING</span>
                   <h3>DSHOffice</h3>
                   <p>构建可验证的 AI 协同办公平台，连接 Obsidian 规划、项目节奏、执行证据和正式产物。</p>
+                  <a className="focus-link" href="/projects/dshoffice">查看项目案例 →</a>
                 </article>
                 <article>
                   <span>RESEARCH & WRITING</span>
                   <h3>《深入理解 DeepHarness》</h3>
                   <p>围绕开源 Agent Harness 的架构、机制与生产实践持续研究和写作，目前处于写作阶段。</p>
+                  <a
+                    className="focus-link"
+                    href="https://luxuzhou.github.io/dsh-in-depth/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    在线阅读 GitHub Docs ↗
+                  </a>
                 </article>
               </div>
             </div>
