@@ -14,6 +14,18 @@ export default function AboutPage() {
     <>
       <Navbar current="about" />
       <main className="page-main">
+        <header className="page-intro page-intro-about">
+          <div className="site-shell page-intro-grid">
+            <div>
+              <p className="eyebrow">ABOUT / 关于我</p>
+              <h1>算法、工程与产品协同，<br /><em>交付可靠 AI 系统。</em></h1>
+            </div>
+            <p className="page-intro-copy">
+              我是陆徐洲，也以 LexLoop 持续写作。八年实践覆盖医疗信息化、企业软件与生产级 AI 应用。
+            </p>
+          </div>
+        </header>
+
         <section className="about-section about-section-primary">
           <div className="site-shell profile-layout">
             <figure className="profile-photo-card">

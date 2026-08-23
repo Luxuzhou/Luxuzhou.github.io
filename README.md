@@ -36,3 +36,5 @@ npm run build
 ## GitHub Pages
 
 站点同时发布到 `https://luxuzhou.github.io/`。源码保存在 `main` 分支，经过静态构建和站内链接检查的发布文件保存在 `gh-pages` 分支。
+
+发布时将新的 `out` 内容覆盖到 `gh-pages`，并至少保留上一版 `_next/static` 指纹资源。GitHub Pages 的 HTML 可能在 CDN 中缓存数分钟；提前删除旧 CSS 或脚本会导致缓存中的旧 HTML 暂时失去样式。

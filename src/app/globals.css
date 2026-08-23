@@ -1929,7 +1929,7 @@ a {
   display: grid;
   grid-template-columns: minmax(300px, 380px) minmax(0, 1fr);
   gap: 58px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .about-section-primary {
@@ -1979,6 +1979,11 @@ a {
   line-height: 1.1;
 }
 
+.profile-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .profile-content > p:not(.eyebrow):not(.availability) {
   margin: 0 0 14px;
   color: var(--ink-soft);
@@ -2021,7 +2026,7 @@ a {
 }
 
 .availability {
-  margin: 24px 0 0;
+  margin: auto 0 0;
   padding: 15px 18px;
   color: var(--paper-light);
   background: var(--forest);
