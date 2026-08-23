@@ -46,7 +46,7 @@ export default async function ArticleDetailPage({ params }: ArticlePageProps) {
 
   return (
     <>
-      <Navbar />
+      <Navbar current="articles" />
       <main className="page-main">
         <header className="article-detail-hero">
           <div className="site-shell article-title-shell">

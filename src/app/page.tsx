@@ -58,7 +58,7 @@ export default function Home() {
                 <em>并且值得信任。</em>
               </h1>
               <p className="hero-lead">
-                我是陆徐洲，也以 LexLoop 持续写作，是公众号「硅基鹿鸣」的作者。关注 Agent Engineering、企业数据智能，以及人和 AI 如何共同交付可靠结果。
+                我是陆徐洲，拥有八年算法工程与企业 AI 落地经验，也是公众号「硅基鹿鸣」作者 LexLoop。长期聚焦 Agent Engineering、医疗数据智能与可靠 AI 系统。
               </p>
               <div className="hero-actions">
                 <a className="button button-primary" href="/projects">
@@ -70,12 +70,12 @@ export default function Home() {
               </div>
               <div className="hero-facts" aria-label="个人成果摘要">
                 <div>
-                  <strong>10,000+</strong>
-                  <span>「硅基鹿鸣」读者</span>
+                  <strong>8 年</strong>
+                  <span>算法研发与工程交付</span>
                 </div>
                 <div>
-                  <strong>1–5 月</strong>
-                  <span>持续日更实践</span>
+                  <strong>10,000+</strong>
+                  <span>「硅基鹿鸣」读者</span>
                 </div>
                 <div>
                   <strong>1 本</strong>
@@ -95,18 +95,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="marquee" aria-label="关注方向">
-          <div>
-            <span>AGENT ENGINEERING</span>
-            <i>◆</i>
-            <span>TRUSTWORTHY AI</span>
-            <i>◆</i>
-            <span>ENTERPRISE INTELLIGENCE</span>
-            <i>◆</i>
-            <span>HUMAN–AI COLLABORATION</span>
-          </div>
-        </section>
-
         <section className="section-block" id="work">
           <div className="site-shell">
             <div className="section-heading split-heading">
@@ -115,7 +103,7 @@ export default function Home() {
                 <h2>从关键问题出发，<br />展示解决问题的方式。</h2>
               </div>
               <p>
-                每个案例围绕问题、约束、关键判断和验证结果展开。企业实践采用重新绘制与不可逆脱敏，客户、源码与内部数据保持在授权边界内。
+                四个核心案例覆盖个人产品、企业 Agent、医疗数据治理与科研平台，集中呈现产品架构、关键判断和验证结果。
               </p>
             </div>
 
@@ -216,7 +204,7 @@ export default function Home() {
             <p className="eyebrow">NOW / 现在</p>
             <h2>正在构建 DSHOffice，<br />也期待连接值得长期投入的 AI 实践。</h2>
             <p>
-              欢迎围绕 AI 产品落地、工程可信度与组织协同展开交流。这里会持续公开真实实践、失败复盘和可复用的方法。
+              开放 AI 算法与 Agent 平台方向的职业机会、产品合作和技术交流。这里持续更新项目进展、工程实验与方法复盘。
             </p>
             <div>
               <a className="button button-primary" href="/about">了解我的经历 <span>↗</span></a>

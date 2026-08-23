@@ -37,7 +37,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
 
   return (
     <>
-      <Navbar />
+      <Navbar current="projects" />
       <main className="page-main">
         <header className="detail-hero project-detail-hero">
           <div className="site-shell">

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
+import PageConnections from "@/components/PageConnections";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <Navbar />
+      <Navbar current="about" />
       <main className="page-main">
         <header className="page-intro page-intro-about">
           <div className="site-shell page-intro-grid">
@@ -72,7 +73,7 @@ export default function AboutPage() {
           <div className="site-shell about-connect-grid">
             <div className="current-focus-panel">
               <p className="eyebrow">NOW / 当前投入</p>
-              <h2>两条正在推进的主线。</h2>
+              <h2>当前工作聚焦两个方向。</h2>
               <div className="current-focus-list">
                 <article>
                   <span>BUILDING</span>
@@ -118,6 +119,22 @@ export default function AboutPage() {
               </div>
           </div>
         </section>
+        <PageConnections items={[
+          {
+            eyebrow: "PROJECTS / 项目实践",
+            title: "从核心案例了解我的系统能力",
+            description: "查看个人产品与脱敏企业案例中的问题、方案、关键判断和验证结果。",
+            href: "/projects",
+            action: "查看项目实践",
+          },
+          {
+            eyebrow: "RESEARCH & WRITING / 研究与写作",
+            title: "从文章和成果了解长期研究方向",
+            description: "继续阅读 Agent 工程实验、医疗 AI 研究与技术出版成果。",
+            href: "/articles",
+            action: "继续阅读",
+          },
+        ]} />
       </main>
       <SiteFooter />
     </>

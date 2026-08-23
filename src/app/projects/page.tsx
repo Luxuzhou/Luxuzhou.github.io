@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
+import PageConnections from "@/components/PageConnections";
+import PageSummary from "@/components/PageSummary";
 import SiteFooter from "@/components/SiteFooter";
 import { featuredCases, projectGroups } from "@/data/site";
 
@@ -11,17 +13,24 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <>
-      <Navbar />
+      <Navbar current="projects" />
       <main className="page-main">
         <header className="page-intro">
-          <div className="site-shell page-intro-grid">
-            <div>
-              <p className="eyebrow">PROJECTS / 项目实践</p>
-              <h1>让项目成为能力证据，<br /><em>沉淀可讨论的实践。</em></h1>
+          <div className="site-shell">
+            <div className="page-intro-grid">
+              <div>
+                <p className="eyebrow">PROJECTS / 项目实践</p>
+                <h1>从 AI Agent 到医疗智能，<br /><em>呈现系统级交付能力。</em></h1>
+              </div>
+              <p className="page-intro-copy">
+                四个核心案例展示产品架构、算法方案与工程验证；22 项专题实践补充视觉、预测和数据治理等能力覆盖。企业案例均已完成脱敏。
+              </p>
             </div>
-            <p className="page-intro-copy">
-              这里将个人产品与脱敏后的企业实践放进同一套证据框架：问题是什么、约束在哪里、我做了什么判断、结果如何被验证。
-            </p>
+            <PageSummary items={[
+              { value: "4 个", label: "核心系统案例" },
+              { value: "22 项", label: "专题工程实践" },
+              { value: "1 个", label: "个人旗舰产品" },
+            ]} />
           </div>
         </header>
 
@@ -30,7 +39,7 @@ export default function ProjectsPage() {
             <div className="section-heading split-heading">
               <div>
                 <p className="eyebrow">FEATURED CASES / 核心案例</p>
-                <h2>四个值得深入讲述的<br />系统级实践。</h2>
+                <h2>四个系统级案例，展示<br />从问题定义到结果验证。</h2>
               </div>
               <p>DSHOffice 是持续构建的个人旗舰产品；其余三个案例来自企业实践，仅展示经过脱敏且可以由公开证据支撑的部分。</p>
             </div>
@@ -62,7 +71,7 @@ export default function ProjectsPage() {
             <div className="archive-heading">
               <div>
                 <p className="eyebrow">EXTENDED PRACTICE / 专题实践</p>
-                <h2>多领域实践，呈现能力广度。</h2>
+                <h2>22 项专题实践，补充算法与行业覆盖。</h2>
               </div>
               <p>这些专题覆盖 Agent、视觉识别、预测优化和医疗数据治理，展示工程方法如何在不同业务约束下形成可交付结果。</p>
             </div>
@@ -81,10 +90,26 @@ export default function ProjectsPage() {
             </div>
 
             <p className="confidential-note">
-              保密说明：企业案例采用不可逆脱敏，仅呈现重新绘制的架构与流程；指标均经过公开权限确认。公司源码、客户名称、真实业务数据、内部接口、私有配置与未发布截图保持在授权边界内。
+              企业案例已完成不可逆脱敏，公开内容限于重绘架构、方法与经授权的结果；客户、源码、业务数据与内部配置不对外展示。
             </p>
           </div>
         </section>
+        <PageConnections items={[
+          {
+            eyebrow: "RESEARCH / 研究成果",
+            title: "查看实践沉淀出的研究与知识成果",
+            description: "覆盖医疗 AI 基金技术路线、专利方案、论文协作与 Agent 工程出版。",
+            href: "/research",
+            action: "查看研究成果",
+          },
+          {
+            eyebrow: "WRITING / 研究与写作",
+            title: "阅读项目背后的实验与判断",
+            description: "从工具对照、验证实验和产品复盘中了解方法如何形成。",
+            href: "/articles",
+            action: "阅读代表文章",
+          },
+        ]} />
       </main>
       <SiteFooter />
     </>
