@@ -1,7 +1,7 @@
-:HL["/_next/static/chunks/1moafq23l835l.css","style"]
+:HL["/_next/static/chunks/2sag181ioz_46.css","style"]
 :HL["/images/articles/ai-efficiency-product-bottleneck/01_%E5%8E%9F%E5%9E%8B%E5%A2%9E%E5%A4%9A%E4%BB%B7%E5%80%BC%E4%B8%8D%E5%A2%9E.png","image"]
 :HL["/images/articles/ai-efficiency-product-bottleneck/02_%E5%B1%80%E9%83%A8%E6%8F%90%E6%95%88%E7%BB%84%E7%BB%87%E5%A0%B5%E7%82%B9.png","image"]
 :HL["/images/articles/ai-efficiency-product-bottleneck/03_%E4%BC%81%E4%B8%9A%E4%B8%8A%E4%B8%8B%E6%96%87%E6%A0%88.png","image"]
 :HL["/images/articles/ai-efficiency-product-bottleneck/04_FDE%E5%B7%A5%E4%BD%9C%E9%97%AD%E7%8E%AF%E4%B8%8E%E8%83%BD%E5%8A%9B.png","image"]
 :HL["/images/articles/ai-efficiency-product-bottleneck/05_Agent%E7%AD%89%E4%BA%8E%E6%A8%A1%E5%9E%8B%E5%8A%A0Harness.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"articles","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"ai-efficiency-product-bottleneck","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"r8CFqgJxdnorMko2U6sNY"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"articles","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"ai-efficiency-product-bottleneck","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"ez6FSqAVqr0su_tCLPgil"}
