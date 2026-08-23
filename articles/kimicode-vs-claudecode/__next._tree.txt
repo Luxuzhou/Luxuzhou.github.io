@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/2sag181ioz_46.css","style"]
+:HL["/_next/static/chunks/08qt3gq7xdwht.css","style"]
 :HL["/images/articles/kimicode-vs-claudecode/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260614130146_1107_102.png","image"]
 :HL["/images/articles/kimicode-vs-claudecode/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260614084016_1097_102.png","image"]
 :HL["/images/articles/kimicode-vs-claudecode/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260614093240_1099_102.png","image"]
@@ -7,4 +7,4 @@
 :HL["/images/articles/kimicode-vs-claudecode/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260614125958_1105_102.png","image"]
 :HL["/images/articles/kimicode-vs-claudecode/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260614125853_1103_102.png","image"]
 :HL["/images/articles/kimicode-vs-claudecode/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260614125918_1104_102.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"articles","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"kimicode-vs-claudecode","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"ez6FSqAVqr0su_tCLPgil"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"articles","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"kimicode-vs-claudecode","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"2S5xwE0oZiNh9oUoTuuql"}
