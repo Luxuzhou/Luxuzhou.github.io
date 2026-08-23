@@ -35,4 +35,4 @@ npm run build
 
 ## GitHub Pages
 
-站点同时发布到 `https://luxuzhou.github.io/`。推送到 `main` 分支后，GitHub Actions 会执行静态构建、检查站内链接并更新 GitHub Pages。
+站点同时发布到 `https://luxuzhou.github.io/`。源码保存在 `main` 分支，经过静态构建和站内链接检查的发布文件保存在 `gh-pages` 分支。
