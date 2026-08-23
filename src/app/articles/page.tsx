@@ -32,7 +32,7 @@ export default function ArticlesPage() {
                 <p className="eyebrow">SELECTED NOTES / 已确认发布</p>
                 <h2>近期代表性文章。</h2>
               </div>
-              <p>当前展示已核实的公众号标题和发布日期；后续内容同步流程将逐步接入全文与原始素材，所有条目都以真实发布记录为准。</p>
+              <p>精选公众号已发布的代表文章，保留正式标题、发布日期与完整正文，便于按主题持续阅读和交叉参照。</p>
             </div>
 
             <div className="article-index-list">
@@ -52,7 +52,7 @@ export default function ArticlesPage() {
               <span>RESEARCH &amp; EVIDENCE / 研究与成果</span>
               <div>
                 <h2>基金申报、专利方案、论文协作与出版成果</h2>
-                <p>按公开状态、个人角色和可验证证据组织，逐步补齐完整成果台账。</p>
+                <p>基金、专利、论文协作与出版成果均按公开状态、个人角色和可验证证据呈现。</p>
               </div>
               <strong>查看研究成果 →</strong>
             </a>

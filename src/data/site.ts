@@ -76,7 +76,7 @@ export const featuredCases: FeaturedCase[] = [
     status: "生产实践 · 已脱敏",
     statusType: "delivered",
     capabilities: ["Agent Platform", "Tool Governance", "Observability", "Release Gates"],
-    signal: "证明复杂 Agent 系统的工程化与治理能力",
+    signal: "复杂 Agent 系统的工程化与治理",
     role: "Agent 平台方案设计、运行时治理与工程落地",
     problem: "企业引入多个 Agent、技能和工具后，任务入口、运行轨迹、权限、评测与发布门禁容易分散，业务人员也很难从底层技术概念直接完成任务。",
     constraints: [
@@ -110,7 +110,7 @@ export const featuredCases: FeaturedCase[] = [
     status: "企业实践 · 已脱敏",
     statusType: "delivered",
     capabilities: ["Data Agent", "Semantic Governance", "Query Spec", "Acceptance"],
-    signal: "证明数据治理、语义系统与大模型结合能力",
+    signal: "数据治理、语义系统与大模型协同",
     role: "数据 Agent 架构、语义治理、验收体系与产品交付",
     problem: "自然语言数据问答很容易出现指标遗漏、口径漂移、越权查询和模型编造 SQL。业务真正需要的是能够解释、确认并受控执行的分析过程。",
     constraints: [
@@ -140,11 +140,11 @@ export const featuredCases: FeaturedCase[] = [
     eyebrow: "Enterprise case · de-identified",
     title: "AI 科研证据与实验平台",
     summary:
-      "围绕研究项目连接证据、实验、来源追踪与审批机制。当前公开内容聚焦已经完成的基础阶段，后续规划按未来路线单独呈现。",
+      "围绕研究项目连接证据、实验、来源追踪与审批机制，形成从研究问题到可复核产物的可信工作流。",
     status: "阶段性实践 · 已脱敏",
     statusType: "research",
     capabilities: ["Research Workflow", "Provenance", "Model Gateway", "Approval"],
-    signal: "证明科研工作流与可信 AI 产品化判断",
+    signal: "科研工作流与可信 AI 产品化",
     role: "科研平台产品规划、领域架构与端到端验证设计",
     problem: "科研活动横跨文献、数据库、实验、模型、图表和论文写作，结论与证据经常分散在不同工具中，难以复核、复现和持续演进。",
     constraints: [
@@ -160,11 +160,11 @@ export const featuredCases: FeaturedCase[] = [
       { title: "渐进式闭环", description: "在既有训练、实验和部署能力上，优先补齐科研上游和证据追溯主链。" },
     ],
     evidence: [
-      "完成平台总计划、端到端 MVP、领域架构、路线图和技术决策等规划基线。",
+      "形成平台总体方案、端到端 MVP、领域架构、路线图和关键技术决策。",
       "现有系统具备权限、审计、数据源、清洗、标注、实验、模型、部署与反馈基础模块。",
       "LIS 数据驱动科研作为首个领域包进入验证范围。",
     ],
-    outcome: "当前完成基础阶段和平台级路线收敛，公开案例重点呈现产品判断、证据模型与研究工作流设计。",
+    outcome: "已完成基础阶段与平台路线收敛，形成证据模型、领域架构和研究工作流的核心方案。",
     nextStep: "用一个可公开的黄金研究项目验证从方向发现、论文复现到实验比较和稿件证据包的完整链路。",
     relatedArticleSlugs: ["deepseek-v4-flash-agent", "agent-tool-selection-1200"],
   },

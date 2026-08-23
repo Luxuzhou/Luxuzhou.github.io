@@ -115,7 +115,7 @@ export default function Home() {
                 <h2>从关键问题出发，<br />展示解决问题的方式。</h2>
               </div>
               <p>
-                核心案例保留问题、约束、关键判断和可验证结果。企业实践均采用重新绘制与不可逆脱敏，客户、源码与内部数据保持在授权边界内。
+                每个案例围绕问题、约束、关键判断和验证结果展开。企业实践采用重新绘制与不可逆脱敏，客户、源码与内部数据保持在授权边界内。
               </p>
             </div>
 
@@ -140,7 +140,7 @@ export default function Home() {
             </div>
 
             <div className="section-action">
-              <a className="text-link" href="/projects">打开完整能力项目库 <span>→</span></a>
+              <a className="text-link" href="/projects">查看全部项目实践 <span>→</span></a>
             </div>
           </div>
         </section>
@@ -214,9 +214,9 @@ export default function Home() {
         <section className="closing-section">
           <div className="site-shell closing-grid">
             <p className="eyebrow">NOW / 现在</p>
-            <h2>正在构建 DSHOffice，<br />也在寻找下一段值得长期投入的工作。</h2>
+            <h2>正在构建 DSHOffice，<br />也期待连接值得长期投入的 AI 实践。</h2>
             <p>
-              希望和真正关心 AI 产品落地、工程可信度与组织协同的人交流。这里会持续公开实践、失败和可复用的方法。
+              欢迎围绕 AI 产品落地、工程可信度与组织协同展开交流。这里会持续公开真实实践、失败复盘和可复用的方法。
             </p>
             <div>
               <a className="button button-primary" href="/about">了解我的经历 <span>↗</span></a>

@@ -61,10 +61,10 @@ export default function ProjectsPage() {
           <div className="site-shell">
             <div className="archive-heading">
               <div>
-                <p className="eyebrow">CAPABILITY ARCHIVE / 能力项目库</p>
-                <h2>更多小项目，按能力组织。</h2>
+                <p className="eyebrow">EXTENDED PRACTICE / 专题实践</p>
+                <h2>多领域实践，呈现能力广度。</h2>
               </div>
-              <p>核心案例呈现纵向深度，小项目补充能力覆盖面，并为后续面试、文章和专题案例提供可追溯入口。</p>
+              <p>这些专题覆盖 Agent、视觉识别、预测优化和医疗数据治理，展示工程方法如何在不同业务约束下形成可交付结果。</p>
             </div>
 
             <div className="project-group-grid">

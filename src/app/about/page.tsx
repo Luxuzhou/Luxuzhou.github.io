@@ -63,7 +63,7 @@ export default function AboutPage() {
                 <div><strong>1 本</strong><span>已出版 Agent 工程图书</span></div>
               </div>
 
-              <p className="availability">当前持续构建 DSHOffice，并关注 Agent 平台、企业智能与 AI 产品工程化方向的长期机会。</p>
+              <p className="availability">当前持续构建 DSHOffice，也欢迎围绕 Agent 平台、企业智能与 AI 产品工程化展开交流与合作。</p>
             </div>
           </div>
         </section>
@@ -91,7 +91,7 @@ export default function AboutPage() {
                 <div>
                   <p className="eyebrow">WECHAT / 继续阅读</p>
                   <h3>硅基鹿鸣</h3>
-                  <p>这里承载更完整的实验过程、工具实测和行业判断，也是目前最稳定的内容入口。</p>
+                  <p>持续发布完整实验、工具实测和行业判断，欢迎扫码关注并继续阅读。</p>
                 </div>
                 <div className="wechat-search" aria-label="微信公众号搜索提示">
                   <a

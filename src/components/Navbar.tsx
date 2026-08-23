@@ -11,6 +11,7 @@ export default function Navbar() {
         <nav className="main-nav" aria-label="主导航">
           <a href="/projects">项目实践</a>
           <a href="/articles">研究与写作</a>
+          <a href="/research">研究成果</a>
           <a href="/about">关于我</a>
         </nav>
         <details className="mobile-menu">
@@ -18,6 +19,7 @@ export default function Navbar() {
           <div>
             <a href="/projects">项目实践</a>
             <a href="/articles">研究与写作</a>
+            <a href="/research">研究成果</a>
             <a href="/about">关于我</a>
           </div>
         </details>
